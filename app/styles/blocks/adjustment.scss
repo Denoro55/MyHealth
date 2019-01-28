@@ -1,0 +1,156 @@
+html{
+	height: 100%;
+}
+
+body{
+	min-height: 100%;
+	margin: 0;
+	font-size: 16px;
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+	color: $main;
+	// background: linear-gradient(to right,#5e4bf9,lighten(#00dcff,.5),#5e4bf9);
+}
+
+@font-face{
+	font-family: 'CeraRoundProLight';
+	src: url('../fonts/CeraRoundPro-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'CeraRoundPro';
+	src: url('../fonts/CeraRoundPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'CeraRoundProMedium';
+	src: url('../fonts/CeraRoundPro-Medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'CeraRoundProBold';
+	src: url('../fonts/CeraRoundProBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin font-light(){
+	font-family: 'CeraRoundProLight',Arial, sans-serif;
+}
+
+@mixin font(){
+	font-family: 'CeraRoundPro',Arial, sans-serif;
+}
+
+@mixin font-medium(){
+	font-family: 'CeraRoundProMedium',Arial, sans-serif;
+}
+
+@mixin font-bold(){
+	font-family: 'CeraRoundProBold',Arial, sans-serif;
+}
+
+body{
+	@include font-medium();
+}
+
+::-webkit-scrollbar {width: 12px;height: 12px;}
+::-webkit-scrollbar-track-piece {background:rgba(0,0,0,0);}
+::-webkit-scrollbar-thumb:vertical {height:10px;background: #272c35;}
+::-webkit-scrollbar-thumb:vertical:hover {background: #71CA55;}
+::-webkit-scrollbar-thumb:horizontal {width:10px;background: #272c35;}
+::-webkit-scrollbar-thumb:horizontal:hover {background: #71CA55;}
+
+.wrapper{
+	width: 100%;
+	overflow-x: hidden;
+	position: relative;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	margin: 0;
+	line-height: 24px;
+}
+
+a,a:hover,a:focus{
+	text-decoration: none;
+}
+
+h1,h2,h3,h4,h5{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+%clearfix{
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin pc(){
+	@media screen and (max-width: 1200px){
+		@content;
+	}
+}
+
+@mixin tablet(){
+	@media screen and (max-width: 768px){
+		@content;
+	}
+}
+
+@mixin mini-tablet(){
+	@media screen and (max-width: 600px){
+		@content;
+	}
+}
+
+@mixin phones(){
+	@media screen and (max-width: 480px){
+		@content;
+	}
+}
+
+.container{
+	margin: 0 auto;
+	width: 1160px;
+	@extend %clearfix;
+	@include pc{
+		width: 768px;
+		padding: 	0 20px;
+	}
+	@include tablet{
+		width: 100%;
+	}
+}
+
+html{
+	@include pc{
+		font-size: 15px;
+	}
+	@include tablet{
+		font-size: 14px;
+	}
+	@include phones{
+		font-size: 13px;
+	}
+}

@@ -1,0 +1,27 @@
+.section-6{
+	padding-top: 140px;
+	padding-bottom: 160px;
+	background: #e2eaf7;
+	@include pc{
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}
+}
+.access-block{
+	margin-top: 40px;
+	text-align: center;
+}
+.access-title{
+	font-size: 24px;
+	line-height: 36px;
+}
+.form{
+	width: 	565px;
+	display: 	flex;
+	margin: 	0 auto;
+	margin-top: 50px;
+}
+.access-input{
+	margin-right: 	40px;
+	flex: 1;
+}

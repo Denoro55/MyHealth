@@ -1,0 +1,65 @@
+.btn-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $pink;
+	padding: 20px 37px;
+	border-radius: 30px;
+	font-size: 	16px;
+	color: white;
+	border: 0;
+	@include font-bold();
+	transition: all .5s;
+	&:hover{
+		cursor: pointer;
+		padding: 20px 70px;
+	}
+}
+.title{
+	font-size: 36px;
+	color: $main;
+	@include font-medium();
+}
+.title-darken{
+	color: #31496b;
+}
+.text-center{
+	text-align: 	center;
+}
+.section-svg{
+	height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 	0;
+    right: 	0;
+    overflow: 	hidden;
+}
+.input-style{
+	border: 1px solid $main;
+	border-radius: 30px;
+	padding: 	0 20px;
+	font-size: 	14px;
+	color: #a8b2bf;
+	outline: 0;
+	@include font-light();
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #a8b2bf;
+	  font-size: 	14px;
+	  @include font-light();
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: #a8b2bf;
+	  font-size: 	14px;
+	  @include font-light();
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: #a8b2bf;
+	  font-size: 	14px;
+	  @include font-light();
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: #a8b2bf;
+	  font-size: 	14px;
+	  @include font-light();
+	}
+}

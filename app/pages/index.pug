@@ -1,0 +1,179 @@
+extends ./parts/layout.pug
+
+block content
+
+	.wrapper
+		section.section-1
+			.section-top
+				.slider
+					.slider-svg
+						svg(viewbox='0 0 290 105', xmlns='http://www.w3.org/2000/svg', preserveaspectratio='none')
+							g(transform='translate(-5.3 -188)')
+								path(d='m5.3 188c122 10 207 10 290 0v105h-290z', style='fill:white;')
+					.slider-item.slider-item-active.slider-item-1(style="background: url('./img/bg.png')")
+					.slider-item(style="background: url('./img/bg2.png')")
+				.container
+					header.header
+						.header-wrapper
+							a(href="/").logo
+								img(src="img/logo.png", alt="")
+							.header__right
+								ul.menu
+									li.menu__item
+										a(href="#") О сервисе
+									li.menu__item
+										a(href="#") Функции
+									li.menu__item.menu__item-dotted
+										a(href="#") Возможности
+									li.menu__item
+										a(href="#") Партнеры
+								.request-block
+									a(href="#").request Оставить заявку
+					.main-content
+						.main-content-block
+							h1.main-title Расширяем возможности предоставления качественных медицинских услуг
+							p.main-text «Дневник здоровья» – новый сервис для самоконтроля показателей состояния здоровья, разработанный для участников программы «Мое здоровье».
+							.main-button
+								a(href="#").btn-link Узнать больше
+							.slider-nav
+								.toggler
+									ul.toggler-list
+										li.toggler-item.toggler-active
+											.toggler-line
+										li.toggler-item
+											.toggler-line
+
+		section.section-2
+			img.bg-line-2(src="img/lines2.png", alt="")
+			img.bg-line-3(src="img/lines3.png", alt="")
+			.container
+				.pulse
+					.point.point-1
+						.point-number 55
+					.point.point-2
+						.point-number 68
+					.point.point-3
+						.point-number 72
+					.pulse-inner
+						img(src="img/heart.png", alt="")
+				.diary-block
+					img(src="img/phone.png", alt="")
+					.diary-content
+						h3.title.diary-title Что такое «Дневник здоровья»?
+						.diary-subtitle Дневник пациента — это удобный онлайн-сервис:
+						ul.dotted-list.diary-list
+							li.dotted-item Вносите результаты измерений вручную или с помощью интегрированных приборов
+							li.dotted-item Ведите персональную медицинскую карту с историей ваших измерений 
+							li.dotted-item Делитесь результатами измерений со специалистами для повышения эффективности лечения
+							li.dotted-item Получайте рекомендации, созданные специально для вас
+						.diary-button
+							a(href="#").btn-link Оставить заявку
+			.section-svg
+				svg(viewbox='0 0 290 105', xmlns='http://www.w3.org/2000/svg', preserveaspectratio='none')
+					g(transform='translate(-5.3 -177)')
+						path(d='m5.3 188c122 -10 207 -10 290 0v25h-290z', style='fill:#f1f4fc;')
+		
+		section.section-3
+			.container
+				h3.title.text-center Функции приложения
+				ul.functions
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/1.png", alt="")
+							.function-text Планирование графика приема лекарств
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/2.png", alt="")
+							.function-text Уведомление врача об исполнении назначений
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/3.png", alt="")
+							.function-text Ведение дневника самочувствия
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/4.png", alt="")
+							.function-text Удаленное предоставление измерений врачу
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/5.png", alt="")
+							.function-text Общение с врачами через встроенный мессенджер
+					li.functions__item
+						.functions__item-block
+							.function-circle
+								img(src="img/items/6.png", alt="")
+							.function-text Получение уведомлений для выполнения назначений
+
+		section.section-4
+			.container
+				h3.title.title-darken.text-center Ведите персональный дневник мониторинга здоровья
+				.health-block
+					ul.health-list
+						li.health-item
+							.health-number
+								.health-number-num 1
+							.health-content
+								.health-title Хранение данных
+								.health-text Контролируйте и следите за динамикой изменения показателей вашего здоровья. Вносите результаты измерений медицинских показателей вручную или с помощью интегрированных приборов, храните историю измерений и отслеживайте динамику состояния здоровья
+						li.health-item
+							.health-number
+								.health-number-num 2
+							.health-content
+								.health-title Сообщение информации врачу
+								.health-text Позвольте специалисту дистанционно следить за вашим здоровьем. Будьте на связи со специалистом - отправляйте информацию о своем самочувствии, обменивайтесь сообщениями и получайте <br> рекомендации по вашему здоровью и лечению.
+						li.health-item
+							.health-number
+								.health-number-num 3
+							.health-content
+								.health-title Напоминание о важном
+								.health-text Получайте рекомендации, созданные специально для вас. <br> Система, персонально настроенная под ваши требования, <br> автоматически напомнит о необходимости выполнить рекомендации медицинского специалиста: принять препарат или выполнить <br> измерения.
+					.health-image
+						img(src="img/phones.png", alt="")
+
+		section.section-5
+			.container
+				.spec-block
+					.spec-image
+						img(src="img/specialists.png", alt="")
+					.spec-content
+						h3.title Специалистам
+						ul.dotted-list.spec-list
+							li.dotted-item Дистанционный контроль состояния здоровья ваших пациентов
+							li.dotted-item Наблюдение за динамикой изменения основных <br> медицинских показателей 
+							li.dotted-item Наличие алгоритмов автоматического анализа <br> поступающей информации
+							li.dotted-item Индивидуальная система уведомлений об изменении <br> состояния каждого пациента
+							li.dotted-item Дополнительный сервис коммуникации, позволяющий активно <br> вовлекать пациента в процесс профилактики, лечения и реабилитации.
+
+		section.section-6
+			.container
+				h3.title.text-center Получите бесплатный доступ к «Дневнику здоровья»
+				.access-block
+					.access-title Оставьте свою электронную почту <br> и вы узнаете о запуске данного сервиса первым!
+					form.form(action="/")
+						input.input-style.access-input(type="email" placeholder="Ваш email")
+						button(type="submit").btn-link Отправить
+
+		footer.footer
+			.container
+				.header--footer.header-wrapper
+					a(href="/").logo
+						img(src="img/logo2.png", alt="")
+					.header__right
+						ul.menu
+							li.menu__item
+								a(href="#") О сервисе
+							li.menu__item
+								a(href="#") Функции
+							li.menu__item
+								a(href="#") Возможности
+							li.menu__item
+								a(href="#") Специалистам
+							li.menu__item
+								a(href="tel:88005004549") 88005004549
+
+				.creator Разработка сайта 
+					a(href="#") Redsoft 

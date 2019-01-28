@@ -1,0 +1,129 @@
+.section-2{
+	position: relative;
+	padding-bottom: 	65px;
+	overflow: 	hidden;
+	margin-top: -65px;
+	.container{
+		position: relative;
+	}
+	@include pc{
+		padding-bottom: 85px;
+	}
+}
+.diary-block{
+	padding-top: 180px;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	width: 950px;
+	max-width: 100%;
+	margin: 0 auto;
+	@include font-medium();
+	font-size: 16px;
+	@include pc{
+		padding-top: 80px;
+	}
+}
+.diary-title{
+	margin-bottom: 18px;
+}
+.diary-subtitle{
+	margin-bottom: 18px;
+}
+.dotted-list{
+	max-width: 470px;
+}
+.diary-list{
+	margin-bottom: 40px;
+}
+.dotted-item {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 17px;
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 5px;
+		height: 5px;
+		background: $blue;
+		left: 0;
+		top: 10px;
+		border-radius: 50%;
+	}
+}
+.diary-button{
+	display: flex;
+	justify-content: flex-start;
+}
+.diary-content{
+	padding-top: 85px;
+	padding-left: 40px;
+	@include pc{
+		padding-left: 0px;
+		padding-right: 20px;
+	}
+}
+
+// pulse
+
+.pulse{
+	position: absolute;
+	right: -290px;
+	bottom: -200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 485px;
+	height: 485px;
+	border-radius: 50%;
+	border: 1px solid #e0e9f7;
+	@include pc{
+		display: none;
+	}
+}
+.pulse-inner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 279px;
+	height: 279px;
+	border-radius: 50%;
+	border: 1px solid #bdd1eb;
+}
+.point{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #deecfd;
+	border-radius: 50%;
+	color: #bccce7;
+	font-size: 16px;
+	font-family: 'Geometria';
+}
+.point-number{
+	position: absolute;
+}
+.point-1{
+	left: -5px;
+	.point-number{
+		left: 15px;
+		top: 10px;
+	}
+}
+.point-2{
+	top: -3px;
+	margin-left: -34px;
+	.point-number{
+		left: 15px;
+		top: 13px;
+	}
+}
+.point-3{
+	top: 105px;
+	right: 34px;
+	.point-number{
+		right: 15px;
+		top: 10px;
+	}
+}

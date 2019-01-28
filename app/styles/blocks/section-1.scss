@@ -1,0 +1,130 @@
+.section-1{
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 0 -600px;
+}
+.section-top{
+	position: relative;
+	height: 810px;
+	background: url('../img/lines.png') -160px -230px no-repeat;
+}
+.bg-line-2{
+	position: 	absolute;
+	top: -748px;
+    left: -130px;
+}
+.bg-line-3{
+	position: 	absolute;
+	top: -801px;
+    left: -104px;
+    @include pc{
+    	left: -107px;
+    }
+}
+.main-content{
+	text-align: center;
+	color: white;
+}
+.main-content-block{
+	width: 780px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.main-title{
+	font-size: 36px;
+	margin-bottom: 45px;
+}
+.main-text{
+	font-size: 24px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	line-height: 	1.5em;
+	max-width: 	700px;
+}
+.main-button{
+	display: flex;
+	justify-content: center;
+}
+.slider{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to bottom,rgba(#0e72b7,.92) 50%,rgba(#282b64,.92))
+	}
+}
+.slider-item{
+	display: none;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-position: 50% 0 !important;
+	background-size: auto 165% !important;
+}
+.slider-item-1{
+	background-position: 100% 0 !important;
+}
+.slider-item-active{
+	display: 	block;
+}
+.slider-svg{
+	position: 	absolute;
+	bottom: 0;
+	left: 	0;
+	right: 	0;
+	z-index: 10;
+	height: 80px;
+}
+.slide-active{
+	opacity: 1;
+}
+
+// toggler
+
+.slider-nav{
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: 	flex;
+	justify-content: 	center;
+}
+.toggler{
+	display: 	flex;
+	height: 	16px;
+	border: 1px solid #5489c3;
+	border-radius: 10px;
+	padding: 0 8px;
+}
+.toggler-list{
+	display: flex;
+	align-items: center;
+}
+.toggler-item{
+	display: 	flex;
+	padding: 5px 4px;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.toggler-line{
+	width: 	16px;
+	height: 	1px;
+	background: #5489c3;
+}
+.toggler-active{
+	.toggler-line{
+		background: white;
+	}
+}

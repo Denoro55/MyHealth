@@ -1,0 +1,57 @@
+.section-4{
+	padding-top: 	144px;
+	padding-bottom: 	120px;
+	background: url('../img/lines4.png') -600px -362px no-repeat;
+	@include pc{
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
+}
+.health-block{
+	display: 	flex;
+	margin-top: 95px;
+	@include pc{
+		padding-left: 60px;
+	}
+}
+.health-item{
+	position: 	relative;
+	padding-left: 	60px;
+	margin-bottom: 	75px;
+}
+.health-list{
+	width: 	655px;
+}
+.health-image{
+	margin-left: auto;
+    margin-right: -111px;
+    @include pc{
+    	display: none;
+    }
+}
+.health-number{
+	position: 	absolute;
+	left: -50px;
+	top: -35px;
+	width: 	123px;
+	height: 	123px;
+	background: url('../img/ellipse.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+	display: 	flex;
+	justify-content: 	center;
+	align-items: 	center;
+}
+.health-number-num{
+	opacity: 	.4;
+	font-size: 	60px;
+	color: $blue;
+}
+.health-title{
+	font-size: 	24px;
+	margin-bottom: 	12px;
+}
+.health-text{
+	font-size: 16px;
+	line-height: 1.5;
+}

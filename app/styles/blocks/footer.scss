@@ -1,0 +1,36 @@
+.footer{
+	background: #39649d;
+	padding-top: 	60px;
+	padding-bottom: 	35px;
+	color: white;
+}
+.header--footer{
+	padding-bottom: 	60px;
+	.menu__item{
+		margin-right: 75px;
+		&:last-child{
+			margin-right: 	10px;
+		}
+	}
+	@include pc{
+		display: block !important;
+		.menu{
+			justify-content: space-between;
+			width: 100%;
+			margin-top: 20px;
+		}
+		.menu__item{
+			margin-right: 0;
+		}
+		padding-bottom: 30px;
+	}
+}
+.creator{
+	padding-top: 	35px;
+	@include font();
+	border-top: 1px solid #335b91;
+	text-align: center;
+	a{
+		color: #e70067;
+	}
+}
